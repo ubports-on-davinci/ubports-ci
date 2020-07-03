@@ -65,8 +65,8 @@ jobs:
         git clone https://github.com/ubports-on-davinci/android_device_xiaomi_sm6150-common.git $ANDROID_ROOT/device/xiaomi/sm6150-common --depth=1
         git clone https://github.com/sailfish-on-davinci/vendor_xiaomi.git $ANDROID_ROOT/vendor/xiaomi --depth=1
         git clone https://github.com/ubports-on-davinci/android_kernel_xiaomi_sm6150_fork.git $ANDROID_ROOT/kernel/xiaomi/davinci --depth=1
-        rm -rf $ANDROID_ROOT/halium/hybris-boot
-        git clone https://github.com/sailfish-on-davinci/hybris-boot.git $ANDROID_ROOT/halium/hybris-boot
+        rm -rf $ANDROID_ROOT/hybris/hybris-boot
+        git clone https://github.com/sailfish-on-davinci/hybris-boot.git $ANDROID_ROOT/hybris/hybris-boot
 
     - name: Build HAL
       run: |
