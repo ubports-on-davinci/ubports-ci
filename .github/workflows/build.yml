@@ -54,6 +54,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.MyUbtSecret  }}
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }} # This pulls from the CREATE RELEASE step above, referencing it's ID to get its outputs object, which include a `upload_url`. See this blog post for more info: https://jasonet.co/posts/new-features-of-github-actions/#passing-data-to-future-steps 
-        asset_path: /home/runner/work/out/device_davinci.tar.xz
+        asset_path: /home/runner/work/ubports-ci/ubports-ci/out/device_davinci.tar.xz
         asset_name: device_davinci.tar.xz
         asset_content_type: application/x-gzip        
