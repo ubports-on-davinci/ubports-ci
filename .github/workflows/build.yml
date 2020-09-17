@@ -31,6 +31,7 @@ jobs:
     - name: Build
       run: |
         chmod +x build.sh
+        chmod +x build/*.sh
         ./build.sh
       shell: bash
 
