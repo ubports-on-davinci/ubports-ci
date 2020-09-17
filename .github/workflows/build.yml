@@ -27,9 +27,14 @@ jobs:
         ca-certificates curl git kmod libssl-dev libtinfo5 python2 \
         unzip wget xz-utils -y --no-install-recommends
         sudo ln -sf python2.7 /usr/bin/python
+
+    - name: Build
+      run: |
         chmod +x build.sh
-        build.sh
- 
+        ./build.sh
+      shell: bash
+
+
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
